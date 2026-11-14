@@ -2,16 +2,19 @@ import type { Metadata } from "next";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { CTABand } from "@/components/CTABand";
-import { conceptProjects } from "@/lib/data";
+import { equipmentPortfolio } from "@/lib/data";
 
-export const metadata: Metadata = { title: "Concept studies", description: "Explore illustrative AKAI mobility concepts across global building types." };
+export const metadata: Metadata = { title: "Equipment portfolio", description: "Explore AKAI traction machines, complete lift architecture, cabins, ceilings, indicators and control equipment." };
 
-export default function ProjectsPage() {
+export default function EquipmentPage() {
   return <>
-    <PageHero eyebrow="Concept studies" title={<>Movement in<br /><em>its natural habitat.</em></>} text="Illustrative studies that show how AKAI’s design language can respond to different cities, building types and passenger journeys." image="/images/global-hero.png" />
-    <section className="section projects-note"><Reveal><p className="section-index">IMPORTANT CONTEXT</p><h2>Ideas, not client claims.</h2></Reveal><Reveal><p>These are creative concept studies developed for this website. They demonstrate possible applications and visual directions, not completed commissions, customer relationships or verified product specifications.</p></Reveal></section>
-    <section className="project-catalog">{conceptProjects.map((project, index) => <article key={project.name} className={index % 2 ? "reverse" : ""}><div className="project-catalog-image"><img src={project.image} alt="" /><span>0{index + 1}</span></div><Reveal><p className="kicker"><span />{project.city}</p><h2>{project.name}</h2><strong>{project.type}</strong><p>Exploring how vertical movement, material atmosphere and passenger clarity could become part of one architectural story.</p><div className="project-tags"><span>Mobility strategy</span><span>Cabin experience</span><span>Digital journey</span></div></Reveal></article>)}</section>
-    <section className="section concept-process section--paper-dark"><p className="section-index">FROM BRIEF TO MOVEMENT</p><div><span>01<h3>Read the place</h3></span><i>→</i><span>02<h3>Map the journey</h3></span><i>→</i><span>03<h3>Shape the system</h3></span><i>→</i><span>04<h3>Design the experience</h3></span></div></section>
-    <CTABand title="Create the next AKAI study with us." />
+    <PageHero eyebrow="Equipment portfolio" title={<>The system behind<br /><em>every smooth journey.</em></>} text="Drive equipment, ropes, controls, cabins, entrances and interfaces—brought together as one complete elevator system." image="/profile/pm-traction.webp" />
+    <section className="section projects-note"><Reveal><p className="section-index">01 — COMPLETE SYSTEM</p><h2>More than a cabin.<br />More than a machine.</h2></Reveal><Reveal><p>AKAI’s profile presents the elevator as a coordinated architecture: controller, traction machine, governor, ropes, car frame, doors, guide rails, buffers, landing equipment, indicators and passenger controls.</p></Reveal></section>
+    <section className="project-catalog equipment-catalog">{equipmentPortfolio.map((item, index) => <article key={item.name} className={index % 2 ? "reverse" : ""}><div className="project-catalog-image"><img src={item.image} alt={item.name} /><span>{item.code}</span></div><Reveal><p className="kicker"><span />{item.type}</p><h2>{item.name}</h2><strong>AKAI EQUIPMENT / {item.code}</strong><p>{item.detail}</p><div className="project-tags">{index === 0 && <><span>PM motor</span><span>Compact design</span><span>Lower energy use</span></>}{index === 1 && <><span>Geared</span><span>Gearless</span><span>Vertical traction</span></>}{index === 2 && <><span>Walls</span><span>Ceilings</span><span>Lighting</span><span>Handrails</span></>}{index === 3 && <><span>Segment LED</span><span>Dot LED</span><span>LCD</span><span>Hall buttons</span></>}{index === 4 && <><span>Controller</span><span>Governor</span><span>Doors</span><span>Guide rails</span></>}</div></Reveal></article>)}</section>
+    <section className="section equipment-spec-band section--ink">
+      <Reveal><p className="section-index light">02 — CABIN CONFIGURATION</p><h2>Material, light and interface.<br /><em>Specified together.</em></h2></Reveal>
+      <div className="equipment-spec-grid"><div><span>01</span><b>Walls + doors</b><p>Pattern-printed steel, stainless steel and coloured bronze stainless-steel examples.</p></div><div><span>02</span><b>Ceilings + lighting</b><p>Painted steel, stainless steel, LED downlights and centralized indirect lighting.</p></div><div><span>03</span><b>Floors + handrails</b><p>Durable vinyl, marble, chequered plate and multiple handrail configurations.</p></div><div><span>04</span><b>Controls + displays</b><p>Car operating panels, hall buttons and segment LED, dot LED or LCD indication.</p></div></div>
+    </section>
+    <CTABand title="Match the equipment to the building." text="AKAI can help coordinate capacity, drive, entrances, cabin finishes and interface choices around your requirement." />
   </>;
 }

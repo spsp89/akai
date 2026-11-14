@@ -24,7 +24,7 @@ export function Header() {
   return (
     <header className={`global-header ${scrolled ? "is-scrolled" : ""}`} onMouseLeave={() => setMega(null)}>
       <div className="utility-bar">
-        <span>AKAI GLOBAL</span><span>Architects &amp; consultants</span><span>EN · Global</span>
+        <span>AKAI ELEVATOR SYSTEM</span><span>Simple · Smooth · Safe</span><span>+91 94476 29724</span>
       </div>
       <div className="nav-shell">
         <BrandLogo inverse={!scrolled} />
@@ -35,11 +35,11 @@ export function Header() {
               <button aria-label={`Open ${group.label} menu`} aria-expanded={mega === group.label} onClick={() => setMega(group.label)}>⌄</button>
             </div>
           ))}
-          <Link className={pathname.startsWith("/projects") ? "active" : ""} href="/projects">Projects</Link>
+          <Link className={pathname.startsWith("/projects") ? "active" : ""} href="/projects">Equipment</Link>
           <Link className={pathname.startsWith("/company") ? "active" : ""} href="/company">Company</Link>
         </nav>
         <div className="nav-actions">
-          <Link href="/contact" className="nav-contact">Start a project <span>↗</span></Link>
+          <Link href="/contact" className="nav-contact">Get a quote <span>↗</span></Link>
           <button className="menu-button" aria-expanded={menuOpen} aria-label="Toggle navigation" onClick={() => setMenuOpen(!menuOpen)}><i /><i /></button>
         </div>
       </div>
@@ -49,12 +49,12 @@ export function Header() {
           <div className="mega-links">
             {group.items.map((item, index) => <Link href={item.href} key={item.href}><b>0{index + 1}</b><strong>{item.label}</strong><span>{item.note}</span><i>↗</i></Link>)}
           </div>
-          <div className="mega-feature"><p>AKAI GLOBAL</p><strong>Movement, engineered around life.</strong><span>Explore our global design perspective.</span></div>
+          <div className="mega-feature"><p>AKAI ELEVATOR SYSTEM</p><strong>Elevating spaces. Enriching lives.</strong><span>Modern solutions for residential, commercial and industrial spaces.</span></div>
         </div>
       ))}
       <div className={`mobile-drawer ${menuOpen ? "open" : ""}`}>
         {navGroups.map(group => <div key={group.label}><Link href={group.href}>{group.label}</Link><div>{group.items.slice(0, 4).map(item => <Link key={item.href} href={item.href}>{item.label}</Link>)}</div></div>)}
-        <Link href="/projects">Projects</Link><Link href="/company">Company</Link><Link href="/contact" className="mobile-project">Start a project ↗</Link>
+        <Link href="/projects">Equipment</Link><Link href="/company">Company</Link><Link href="/contact" className="mobile-project">Get a quote ↗</Link>
       </div>
     </header>
   );
