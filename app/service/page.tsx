@@ -4,7 +4,7 @@ import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { CTABand } from "@/components/CTABand";
 
-export const metadata: Metadata = { title: "Support", description: "Contact Akai Elevator Systems for elevator support and assistance." };
+export const metadata: Metadata = { title: "Support", description: "Contact Akai Elevator System for elevator support and assistance." };
 
 export default function ServicePage() {
   return <>

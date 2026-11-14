@@ -12,7 +12,7 @@ export function Footer() {
         <div><p>Equipment</p><Link href="/projects">Traction machines</Link><Link href="/projects">Cabins + ceilings</Link><Link href="/projects">Indicators + controls</Link><Link href="/projects">System architecture</Link></div>
         <div><p>Contact</p><Link href="/company">About AKAI</Link><a href="mailto:akaielevatorsystem@gmail.com">akaielevatorsystem@gmail.com</a><a href="tel:+919447629724">+91 94476 29724</a><Link href="/contact">Request a quote</Link></div>
       </div>
-      <div className="footer-bottom"><span>© 2026 Akai Elevator Systems / India</span><span>Simple · Smooth · Safe</span><Link href="#top">Back to top ↑</Link></div>
+      <div className="footer-bottom"><span>© 2026 Akai Elevator System / India</span><span>Simple · Smooth · Safe</span><Link href="#top">Back to top ↑</Link></div>
     </footer>
   );
 }

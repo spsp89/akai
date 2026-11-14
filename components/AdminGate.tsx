@@ -85,7 +85,7 @@ export function AdminGate() {
 
   return (
     <div className="admin-access">
-      <div className="admin-login-brand"><span>AES</span><b>Akai Elevator Systems</b><small>Owner control centre</small></div>
+      <div className="admin-login-brand"><span>AES</span><b>Akai Elevator System</b><small>Owner control centre</small></div>
       <form className="admin-login-card" onSubmit={login}>
         <p>RESTRICTED ACCESS</p>
         <h1>Admin sign in</h1>

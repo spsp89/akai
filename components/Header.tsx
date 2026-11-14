@@ -24,7 +24,7 @@ export function Header() {
   return (
     <header className={`global-header ${scrolled ? "is-scrolled" : ""}`} onMouseLeave={() => setMega(null)}>
       <div className="utility-bar">
-        <span>Akai Elevator Systems / India</span><span>Simple · Smooth · Safe</span><span>+91 94476 29724</span>
+        <span>Akai Elevator System / India</span><span>Simple · Smooth · Safe</span><span>+91 94476 29724</span>
       </div>
       <div className="nav-shell">
         <BrandLogo inverse={!scrolled} />

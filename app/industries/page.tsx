@@ -5,7 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import { CTABand } from "@/components/CTABand";
 import { industries } from "@/lib/data";
 
-export const metadata: Metadata = { title: "Applications", description: "AKAI elevator systems for residential, commercial, healthcare and industrial applications." };
+export const metadata: Metadata = { title: "Applications", description: "Elevator solutions from Akai Elevator System for residential, commercial, healthcare and industrial applications." };
 
 export default function IndustriesPage() {
   return <>
