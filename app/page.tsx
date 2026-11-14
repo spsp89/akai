@@ -35,7 +35,7 @@ export default function Home() {
 
       <section className="section akai-intro" id="portfolio">
         <Reveal><p className="section-index">01 — AKAI FOR INDIA</p><p className="kicker"><span />A range for how India builds</p><h2>One elevator brand.<br /><em>Every kind of project.</em></h2></Reveal>
-        <Reveal><p>From a private villa to a new apartment tower, from a hospital to a warehouse, Akai brings passenger, clinical and heavy-duty movement into one focused range. Capacity, shaft, doors, cabin finishes and controls can be planned around the project brief.</p><Link href="/company" className="text-link">About Akai Elevator System <span>↗</span></Link></Reveal>
+        <Reveal><p>From a private villa to a new apartment tower, from a hospital to a warehouse, Akai brings passenger, clinical and heavy-duty movement into one focused range. Capacity, shaft, doors, cabin finishes and controls can be planned around the project brief.</p><Link href="/company" className="text-link">About Akai Elevator Systems <span>↗</span></Link></Reveal>
       </section>
 
       <section className="section section--ink">
