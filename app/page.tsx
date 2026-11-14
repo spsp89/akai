@@ -56,7 +56,7 @@ export default function Home() {
       </section>
 
       <section className="akai-safety">
-        <div className="akai-safety-image"><img src="/team/project-operations.webp" alt="Akai project professional at an elevator installation site" /></div>
+        <div className="akai-safety-image"><img src="/media/home-performance.webp" alt="Compact permanent-magnet elevator traction system" /></div>
         <Reveal>
           <p className="section-index light">05 — PERFORMANCE</p>
           <p className="kicker kicker--light"><span />PM traction technology</p>
