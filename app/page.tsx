@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { CTABand } from "@/components/CTABand";
 import { ProductFinder } from "@/components/ProductFinder";
+import { LeadFunnel } from "@/components/LeadFunnel";
+import { LeadershipTeam } from "@/components/LeadershipTeam";
 import { equipmentPortfolio, industries } from "@/lib/data";
 
 export default function Home() {
@@ -29,7 +31,7 @@ export default function Home() {
         <a className="hero-scroll" href="#portfolio"><i>↓</i>Discover AKAI</a>
       </section>
 
-      <div className="motion-strip"><div>PASSENGER / HOSPITAL / GOODS / CAR / HOME / MRL / TRACTION / CONTROLS /</div><div>PASSENGER / HOSPITAL / GOODS / CAR / HOME / MRL / TRACTION / CONTROLS /</div></div>
+      <div className="motion-strip"><div>PASSENGER / HOSPITAL / GOODS / CAR / HOME / ESCALATORS / MRL / TRACTION / CONTROLS /</div><div>PASSENGER / HOSPITAL / GOODS / CAR / HOME / ESCALATORS / MRL / TRACTION / CONTROLS /</div></div>
 
       <section className="section akai-intro" id="portfolio">
         <Reveal><p className="section-index">01 — AKAI FOR INDIA</p><p className="kicker"><span />A range for how India builds</p><h2>One elevator brand.<br /><em>Every kind of project.</em></h2></Reveal>
@@ -41,17 +43,22 @@ export default function Home() {
         <ProductFinder />
       </section>
 
+      <section className="escalator-home">
+        <div className="escalator-home-image"><img src="/images/escalator-hero.webp" alt="Modern glass escalators in a premium Indian commercial atrium" /><span>AKAI / ESCALATORS</span></div>
+        <Reveal><p className="section-index">03 — ESCALATORS</p><p className="kicker"><span />For high-footfall spaces</p><h2>Keep busy spaces<br /><em>flowing naturally.</em></h2><p>Escalator and moving-walkway solutions for malls, retail, offices, transport-linked developments and other busy Indian projects—with layout, entrances, exits and finishes planned around the architecture.</p><div className="escalator-use"><span>Malls + retail</span><span>Commercial complexes</span><span>Public circulation</span></div><Link className="button button-dark" href="/products/escalators">Explore escalators <span>↗</span></Link></Reveal>
+      </section>
+
       <section className="section akai-equipment">
-        <Reveal className="section-title-row section-title-row--dark"><div><p className="section-index">03 — EQUIPMENT</p><p className="kicker"><span />Inside the system</p><h2>Engineering you can<br />see and understand.</h2></div><Link className="text-link" href="/projects">View complete equipment portfolio <span>↗</span></Link></Reveal>
+        <Reveal className="section-title-row section-title-row--dark"><div><p className="section-index">04 — EQUIPMENT</p><p className="kicker"><span />Inside the system</p><h2>Engineering you can<br />see and understand.</h2></div><Link className="text-link" href="/projects">View complete equipment portfolio <span>↗</span></Link></Reveal>
         <div className="equipment-preview">
           {equipmentPortfolio.slice(0, 3).map(item => <Link href="/projects" key={item.code}><div><img src={item.image} alt={item.name} /><span>{item.code}</span></div><small>{item.type}</small><h3>{item.name}</h3><p>{item.detail}</p></Link>)}
         </div>
       </section>
 
       <section className="akai-safety">
-        <div className="akai-safety-image"><img src="/images/service-engineer.png" alt="Elevator engineer inspecting a modern control system" /></div>
+        <div className="akai-safety-image"><img src="/team/project-operations.webp" alt="Akai project professional at an elevator installation site" /></div>
         <Reveal>
-          <p className="section-index light">04 — PERFORMANCE</p>
+          <p className="section-index light">05 — PERFORMANCE</p>
           <p className="kicker kicker--light"><span />PM traction technology</p>
           <h2>Compact power.<br /><em>Considered efficiency.</em></h2>
           <p>The profile describes a joint-lapped core in the permanent-magnet motor that allows denser winding, supporting improved motor efficiency and compactness with lower energy and resource use.</p>
@@ -61,13 +68,16 @@ export default function Home() {
       </section>
 
       <section className="section industries-home">
-        <Reveal className="section-title-row section-title-row--dark"><div><p className="section-index">05 — INDIAN PROJECTS</p><p className="kicker"><span />Designed for real sites</p><h2>From private homes<br />to heavy operations.</h2></div><p>Apartment towers, offices, hospitals and factories each need a different movement, access and durability brief.</p></Reveal>
+        <Reveal className="section-title-row section-title-row--dark"><div><p className="section-index">06 — INDIAN PROJECTS</p><p className="kicker"><span />Designed for real sites</p><h2>From private homes<br />to heavy operations.</h2></div><p>Apartment towers, offices, hospitals and factories each need a different movement, access and durability brief.</p></Reveal>
         <div className="industry-list">{industries.map(item => <Link href={`/industries/${item.slug}`} key={item.slug}><span>{item.number}</span><h3>{item.name}</h3><p>{item.line}</p><i>↗</i></Link>)}</div>
       </section>
 
+      <LeadFunnel />
+      <LeadershipTeam />
+
       <section className="section akai-brand-story section--paper-dark">
         <div className="akai-brand-card"><img src="/images/lobby-elevator.png" alt="Premium Akai elevator in a contemporary Indian building lobby" /></div>
-        <Reveal><p className="section-index">06 — START THE RIGHT BRIEF</p><h2>Four details.<br /><em>One clear first step.</em></h2><div className="brand-principles"><div><b>Building type</b><span>Apartment, villa, hospital, office, retail or industrial.</span></div><div><b>Capacity</b><span>Passenger count, stretcher access, vehicle or goods load.</span></div><div><b>Travel</b><span>Floors, stops, approximate height and preferred entrance.</span></div><div><b>Project city</b><span>Location, site stage and available shaft information.</span></div></div><Link className="button button-dark" href="/contact">Request an India project consultation <span>↗</span></Link></Reveal>
+        <Reveal><p className="section-index">10 — START THE RIGHT BRIEF</p><h2>Four details.<br /><em>One clear first step.</em></h2><div className="brand-principles"><div><b>Building type</b><span>Apartment, villa, hospital, office, retail or industrial.</span></div><div><b>Capacity</b><span>Passenger count, stretcher access, vehicle or goods load.</span></div><div><b>Travel</b><span>Floors, stops, approximate height and preferred entrance.</span></div><div><b>Project city</b><span>Location, site stage and available shaft information.</span></div></div><Link className="button button-dark" href="/contact">Request an India project consultation <span>↗</span></Link></Reveal>
       </section>
       <CTABand title="Planning a lift project in India?" text="Share the building type, load or passenger count, floors and project city. Akai can help frame the right system." />
     </>

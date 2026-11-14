@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { ConversionDock } from "@/components/ConversionDock";
 import "@fontsource/pt-serif/400.css";
 import "./globals.css";
+import "./enhancements.css";
 
 export const metadata: Metadata = {
   title: { default: "Akai Elevator System — Lift solutions for India", template: "%s | Akai Elevator System" },
@@ -11,5 +13,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body><Header /><main>{children}</main><Footer /></body></html>;
+  return <html lang="en"><body><Header /><main>{children}</main><Footer /><ConversionDock /></body></html>;
 }

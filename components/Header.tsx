@@ -39,7 +39,7 @@ export function Header() {
           <Link className={pathname.startsWith("/company") ? "active" : ""} href="/company">Company</Link>
         </nav>
         <div className="nav-actions">
-          <Link href="/contact" className="nav-contact">Get a quote <span>↗</span></Link>
+          <Link href="/#project-planner" className="nav-contact">Plan my lift <span>↗</span></Link>
           <button className="menu-button" aria-expanded={menuOpen} aria-label="Toggle navigation" onClick={() => setMenuOpen(!menuOpen)}><i /><i /></button>
         </div>
       </div>
@@ -54,7 +54,7 @@ export function Header() {
       ))}
       <div className={`mobile-drawer ${menuOpen ? "open" : ""}`}>
         {navGroups.map(group => <div key={group.label}><Link href={group.href}>{group.label}</Link><div>{group.items.slice(0, 4).map(item => <Link key={item.href} href={item.href}>{item.label}</Link>)}</div></div>)}
-        <Link href="/projects">Equipment</Link><Link href="/company">Company</Link><Link href="/contact" className="mobile-project">Get a quote ↗</Link>
+        <Link href="/projects">Equipment</Link><Link href="/company">Company</Link><Link href="/#project-planner" className="mobile-project">Plan my lift ↗</Link>
       </div>
     </header>
   );

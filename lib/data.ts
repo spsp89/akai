@@ -53,7 +53,7 @@ export const products: Product[] = [
     segment: "500–5000 kg load range",
     tagline: "Built for the loads that keep operations moving.",
     description: "Freight and car-lift configurations for factories, warehouses, parking and back-of-house operations, with robust doors and durable interior finish options.",
-    image: "/images/service-engineer.png",
+    image: "/team/project-operations.webp",
     accent: "#c9373e",
     highlights: ["500–5000 kg stated load range", "Four-part centre-opening door option", "Imperforate goods-door option", "Chequered-plate flooring options"],
     applications: ["Factories", "Warehouses", "Car parking"]
@@ -69,22 +69,42 @@ export const products: Product[] = [
     accent: "#b82f35",
     highlights: ["Compact MRL planning", "Residential cabin finishes", "Flexible cabin and entrance sizing", "Home-elevator layout support"],
     applications: ["Villas", "Bungalows", "Duplex homes"]
+  },
+  {
+    slug: "escalators",
+    code: "ES",
+    name: "Escalators",
+    segment: "Commercial escalators + moving walkways",
+    tagline: "Continuous movement for busy public spaces.",
+    description: "Escalator and moving-walkway solutions for malls, retail, offices, transport-linked developments and other high-footfall Indian projects.",
+    image: "/images/escalator-hero.webp",
+    accent: "#e5484d",
+    highlights: ["Application-led circulation planning", "Parallel and criss-cross layout studies", "Entrance and exit coordination", "Architectural finish integration"],
+    applications: ["Malls + retail", "Commercial complexes", "Public circulation"]
   }
 ];
 
 export const industries: Industry[] = [
   { slug: "residential", number: "01", name: "Apartments + Homes", line: "Premium movement for everyday Indian living.", description: "Passenger and home-elevator systems for apartment towers, villas, bungalows and duplex homes, with finishes and planning matched to the project.", priorities: ["Daily passenger movement", "Cabin finish selection", "Compact shaft planning"], product: "Passenger / Home + MRL" },
-  { slug: "commercial", number: "02", name: "Offices + Retail", line: "Reliable movement through the working day.", description: "Passenger elevator systems for offices, hotels, retail and mixed-use projects, with automatic doors, multi-car control options and clear position indication.", priorities: ["Peak passenger flow", "Automatic-door safety", "Clear signalization"], product: "Passenger" },
+  { slug: "commercial", number: "02", name: "Offices + Retail", line: "Reliable movement through the working day.", description: "Passenger elevator and escalator systems for offices, hotels, retail and mixed-use projects, with clear circulation, automatic doors and coordinated passenger interfaces.", priorities: ["Peak passenger flow", "Lift + escalator circulation", "Clear signalization"], product: "Passenger / Escalators" },
   { slug: "healthcare", number: "03", name: "Hospitals + Clinics", line: "Access planned around people and care.", description: "Hospital lift solutions for stretchers, wheelchairs, medical teams and service movement, with generous openings and durable cabin configurations.", priorities: ["Stretcher access", "Wheelchair movement", "Durable cabin design"], product: "Hospital" },
   { slug: "industrial", number: "04", name: "Factories + Warehouses", line: "Capacity for demanding operations.", description: "Goods and car lifts for factories, warehouses, storage and parking applications, with a stated load range from 500 to 5000 kg.", priorities: ["Load capacity", "Robust entrances", "Serviceable equipment"], product: "Goods + Car" }
 ];
 
 export const equipmentPortfolio = [
-  { code: "01", name: "PM traction systems", type: "Efficient, compact drive technology", image: "/images/service-engineer.png", detail: "A joint-lapped PM motor core is described as improving motor efficiency and compactness while reducing energy and resource use." },
+  { code: "01", name: "PM traction systems", type: "Efficient, compact drive technology", image: "/team/engineering-service.webp", detail: "A joint-lapped PM motor core is described as improving motor efficiency and compactness while reducing energy and resource use." },
   { code: "02", name: "Geared + gearless machines", type: "Drive units for varied speed and capacity", image: "/images/global-hero.png", detail: "The range includes geared, gearless, vertical traction and mono traction machine configurations." },
   { code: "03", name: "Cabins + ceilings", type: "Material and lighting configurations", image: "/images/product-cabin.png", detail: "Cabin examples include stainless-steel finishes, mirrors, handrails, flooring choices and centralized indirect LED lighting." },
   { code: "04", name: "Indicators + controls", type: "Hall, car and landing interfaces", image: "/images/lobby-elevator.png", detail: "Segment LED, dot LED and LCD indicators are available alongside multiple hall-button configurations." },
-  { code: "05", name: "Complete elevator system", type: "Engineered component architecture", image: "/images/service-engineer.png", detail: "A coordinated system of traction machine, controller, governor, ropes, car frame, doors, rails, buffers and landing equipment." }
+  { code: "05", name: "Complete elevator system", type: "Engineered component architecture", image: "/team/project-consulting.webp", detail: "A coordinated system of traction machine, controller, governor, ropes, car frame, doors, rails, buffers and landing equipment." }
+];
+
+export const teamMembers = [
+  { role: "Design + Planning", focus: "Shaft planning, cabin direction and coordination with architects.", image: "/team/design-planning.webp" },
+  { role: "Engineering + Service", focus: "Equipment selection, technical review and lifecycle support.", image: "/team/engineering-service.webp" },
+  { role: "Project Operations", focus: "Site readiness, schedules and installation coordination.", image: "/team/project-operations.webp" },
+  { role: "Project Consulting", focus: "Requirement discovery, proposals and customer guidance.", image: "/team/project-consulting.webp" },
+  { role: "Customer Experience", focus: "Enquiry response, consultation follow-up and customer communication.", image: "/team/customer-experience.webp" }
 ];
 
 export const navGroups = [
