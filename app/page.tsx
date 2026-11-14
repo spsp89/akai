@@ -9,9 +9,9 @@ export default function Home() {
     <>
       <section className="akai-hero" id="top">
         <div className="akai-hero-copy">
-          <p className="kicker kicker--light"><span />AKAI Elevator System</p>
-          <h1>Elevating spaces.<br /><em>Enriching lives.</em></h1>
-          <p>Modern elevator and escalator solutions for residential, commercial and industrial spaces—built around safety, precision and efficient movement.</p>
+          <p className="kicker kicker--light"><span />Elevator solutions for India</p>
+          <h1>Built for India.<br /><em>Engineered to rise.</em></h1>
+          <p>Premium elevator systems for apartment towers, villas, hospitals, offices, retail and industry—planned around real Indian projects and built for confident everyday movement.</p>
           <div className="akai-hero-actions">
             <Link href="/products" className="button button-orange">Explore solutions <span>↗</span></Link>
             <Link href="/projects" className="text-link text-link--light">View equipment portfolio <span>↗</span></Link>
@@ -23,8 +23,8 @@ export default function Home() {
           </div>
         </div>
         <div className="akai-hero-visual">
-          <img src="/profile/passenger-auto-door.webp" alt="AKAI automatic passenger elevator with glass cabin" />
-          <div className="akai-hero-label"><span>01 / PASSENGER</span><b>Simple. Smooth. Safe.</b></div>
+          <img src="/images/global-hero.png" alt="Premium glass elevator integrated into a contemporary high-rise" />
+          <div className="akai-hero-label"><span>INDIA / VERTICAL MOBILITY</span><b>Simple. Smooth. Safe.</b></div>
         </div>
         <a className="hero-scroll" href="#portfolio"><i>↓</i>Discover AKAI</a>
       </section>
@@ -32,8 +32,8 @@ export default function Home() {
       <div className="motion-strip"><div>PASSENGER / HOSPITAL / GOODS / CAR / HOME / MRL / TRACTION / CONTROLS /</div><div>PASSENGER / HOSPITAL / GOODS / CAR / HOME / MRL / TRACTION / CONTROLS /</div></div>
 
       <section className="section akai-intro" id="portfolio">
-        <Reveal><p className="section-index">01 — AKAI PORTFOLIO</p><p className="kicker"><span />Solutions that fit the journey</p><h2>One elevator partner.<br /><em>Four distinct needs.</em></h2></Reveal>
-        <Reveal><p>AKAI’s range brings together passenger movement, clinical access, heavy-duty goods handling and compact residential mobility. Cabin design, entrances, controls and drive equipment can be configured around the building brief.</p><Link href="/company" className="text-link">About AKAI Elevator System <span>↗</span></Link></Reveal>
+        <Reveal><p className="section-index">01 — AKAI FOR INDIA</p><p className="kicker"><span />A range for how India builds</p><h2>One elevator brand.<br /><em>Every kind of project.</em></h2></Reveal>
+        <Reveal><p>From a private villa to a new apartment tower, from a hospital to a warehouse, Akai brings passenger, clinical and heavy-duty movement into one focused range. Capacity, shaft, doors, cabin finishes and controls can be planned around the project brief.</p><Link href="/company" className="text-link">About Akai Elevator System <span>↗</span></Link></Reveal>
       </section>
 
       <section className="section section--ink">
@@ -49,7 +49,7 @@ export default function Home() {
       </section>
 
       <section className="akai-safety">
-        <div className="akai-safety-image"><img src="/profile/pm-traction.webp" alt="Permanent-magnet traction machine and elevator shaft engineering" /></div>
+        <div className="akai-safety-image"><img src="/images/service-engineer.png" alt="Elevator engineer inspecting a modern control system" /></div>
         <Reveal>
           <p className="section-index light">04 — PERFORMANCE</p>
           <p className="kicker kicker--light"><span />PM traction technology</p>
@@ -61,15 +61,15 @@ export default function Home() {
       </section>
 
       <section className="section industries-home">
-        <Reveal className="section-title-row section-title-row--dark"><div><p className="section-index">05 — APPLICATIONS</p><p className="kicker"><span />Designed for real spaces</p><h2>From private homes<br />to heavy operations.</h2></div><p>Four application areas, each with a different movement, access and durability brief.</p></Reveal>
+        <Reveal className="section-title-row section-title-row--dark"><div><p className="section-index">05 — INDIAN PROJECTS</p><p className="kicker"><span />Designed for real sites</p><h2>From private homes<br />to heavy operations.</h2></div><p>Apartment towers, offices, hospitals and factories each need a different movement, access and durability brief.</p></Reveal>
         <div className="industry-list">{industries.map(item => <Link href={`/industries/${item.slug}`} key={item.slug}><span>{item.number}</span><h3>{item.name}</h3><p>{item.line}</p><i>↗</i></Link>)}</div>
       </section>
 
       <section className="section akai-brand-story section--paper-dark">
-        <div className="akai-brand-card"><img src="/profile/brand-profile.webp" alt="AKAI Elevator System company profile with elevator and escalator installation" /></div>
-        <Reveal><p className="section-index">06 — OUR PROMISE</p><h2>Your trust<br /><em>drives us higher.</em></h2><div className="brand-principles"><div><b>Safety</b><span>Engineered for maximum protection.</span></div><div><b>Precision</b><span>Technology focused on dependable performance.</span></div><div><b>Efficiency</b><span>Smart solutions for a sustainable future.</span></div><div><b>24/7 Support</b><span>Always there, whenever you need us.</span></div></div><Link className="button button-dark" href="/contact">Contact AKAI <span>↗</span></Link></Reveal>
+        <div className="akai-brand-card"><img src="/images/lobby-elevator.png" alt="Premium Akai elevator in a contemporary Indian building lobby" /></div>
+        <Reveal><p className="section-index">06 — START THE RIGHT BRIEF</p><h2>Four details.<br /><em>One clear first step.</em></h2><div className="brand-principles"><div><b>Building type</b><span>Apartment, villa, hospital, office, retail or industrial.</span></div><div><b>Capacity</b><span>Passenger count, stretcher access, vehicle or goods load.</span></div><div><b>Travel</b><span>Floors, stops, approximate height and preferred entrance.</span></div><div><b>Project city</b><span>Location, site stage and available shaft information.</span></div></div><Link className="button button-dark" href="/contact">Request an India project consultation <span>↗</span></Link></Reveal>
       </section>
-      <CTABand title="Let’s plan the right elevator for your building." text="Share the building type, load, passenger count and installation location. AKAI can help frame the next step." />
+      <CTABand title="Planning a lift project in India?" text="Share the building type, load or passenger count, floors and project city. Akai can help frame the right system." />
     </>
   );
 }

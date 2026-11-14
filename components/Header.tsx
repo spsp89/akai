@@ -24,7 +24,7 @@ export function Header() {
   return (
     <header className={`global-header ${scrolled ? "is-scrolled" : ""}`} onMouseLeave={() => setMega(null)}>
       <div className="utility-bar">
-        <span>AKAI ELEVATOR SYSTEM</span><span>Simple · Smooth · Safe</span><span>+91 94476 29724</span>
+        <span>AKAI ELEVATOR SYSTEM / INDIA</span><span>Simple · Smooth · Safe</span><span>+91 94476 29724</span>
       </div>
       <div className="nav-shell">
         <BrandLogo inverse={!scrolled} />
@@ -49,7 +49,7 @@ export function Header() {
           <div className="mega-links">
             {group.items.map((item, index) => <Link href={item.href} key={item.href}><b>0{index + 1}</b><strong>{item.label}</strong><span>{item.note}</span><i>↗</i></Link>)}
           </div>
-          <div className="mega-feature"><p>AKAI ELEVATOR SYSTEM</p><strong>Elevating spaces. Enriching lives.</strong><span>Modern solutions for residential, commercial and industrial spaces.</span></div>
+          <div className="mega-feature"><p>AKAI / INDIA</p><strong>International thinking. Built around India.</strong><span>For apartments, villas, hospitals, offices and industry.</span></div>
         </div>
       ))}
       <div className={`mobile-drawer ${menuOpen ? "open" : ""}`}>

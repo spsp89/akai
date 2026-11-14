@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function IndustryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; const industry = industries.find(item => item.slug === slug); if (!industry) notFound();
-  const heroImage = industry.slug === "healthcare" ? "/profile/hospital-lift.webp" : industry.slug === "industrial" ? "/profile/goods-lift.webp" : industry.slug === "residential" ? "/profile/cabin-bronze.webp" : "/profile/passenger-auto-door.webp";
+  const heroImage = industry.slug === "industrial" ? "/images/service-engineer.png" : industry.slug === "residential" ? "/images/lobby-elevator.png" : industry.slug === "healthcare" ? "/images/product-cabin.png" : "/images/global-hero.png";
   return <>
     <PageHero eyebrow={`Industry / ${industry.number}`} title={<>{industry.name}<br /><em>{industry.line}</em></>} text={industry.description} image={heroImage}><Link href="/contact" className="button button-orange">Discuss your building <span>↗</span></Link></PageHero>
     <section className="section industry-detail-intro"><Reveal><p className="section-index">01 — THE REQUIREMENT</p><h2>Designed around<br />{industry.name.toLowerCase()} use.</h2></Reveal><Reveal><p>{industry.description}</p><p>Final capacity, dimensions, drive, doors and finishes should be confirmed against the site and applicable project requirements.</p></Reveal></section>
