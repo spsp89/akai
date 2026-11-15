@@ -109,7 +109,7 @@ export const equipmentPortfolio = [
 export const teamMembers = [
   { role: "Design + Planning", focus: "Shaft planning, cabin direction and coordination with architects.", image: "/team/design-planning.webp" },
   { role: "Engineering + Service", focus: "Equipment selection, technical review and lifecycle support.", image: "/team/engineering-service.webp" },
-  { role: "Project Operations", focus: "Site readiness, schedules and installation coordination.", image: "/team/project-operations.webp" },
+  { name: "Rijo Mathew", role: "Project Manager", focus: "15 years of experience in elevator manufacturing, project execution and site coordination.", image: "/team/rijo-mathew.webp" },
   { role: "Project Consulting", focus: "Requirement discovery, proposals and customer guidance.", image: "/team/project-consulting.webp" },
   { role: "Customer Experience", focus: "Enquiry response, consultation follow-up and customer communication.", image: "/team/customer-experience.webp" }
 ];
